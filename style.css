@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+:root {
+    --cor01: #1e293b;
+    --cor02: #0f172a;
+    --cor03: #00f0ff;
+    --cor04: #ffffff;
+
+    --font-padrao: normal 16px "Source Sans 3";
+}
+
+body {
+    font: var(--font-padrao);
+    background-color: var(--cor02);
+    color: var(--cor04);
+}
+
+header {
+    padding: 20px;
+}
+
+header > h3 {
+    display: inline-block;
+    margin-right: 1440px;
+}
+
+header > nav {
+    display: inline-block;
+    padding: 5px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: var(--cor04);
+}
+
+header > nav > a:hover {
+    text-decoration: none;
+    background-color: var(--cor03);
+    color: var(--cor01);
+    padding: 5px;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+
+h2 {
+    padding-top: 30px;
+    text-align: center;
+    font-size: xx-large;
+}
+
+.id1 {
+    padding: 100px;
+    font-size: x-large;
+}
+
+.id1, .id3, .id5 {
+    background-color: var(--cor01);
+}
+
+.id2, .id4, .id6 {
+    background-color: var(--cor02);
+}
+
+.id2 > div{
+    border: 1px solid var(--cor04);
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    padding: 20px;
+    margin-left: 90px;
+    background-color: var(--cor01);
+    border-radius: 10px;
+}
+
+.id2 > p {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+div > h3 {
+    text-align: center;
+}
+
+.id3 > p {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.id3 > div {
+    display: inline-block;
+    margin-left: 250px;
+    border: 1px solid var(--cor04);
+    border-radius: 5px;
+}
+
+.id3, .id2 {
+    padding-bottom: 50px;
+}
+
+.id4 > div {
+    width: 400px;
+    height: 300px;
+    border: 1px solid var(--cor04);
+    display: inline-block;
+    margin-left: 160px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: var(--cor01);
+    margin-bottom: 50px;
+}
+
+.id4 > p {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.btn1 {
+    background-color: #0ea5e9;
+    color: var(--cor04);
+    text-decoration: none;
+    border: 1px solid var(--cor04);
+    border-radius: 5px;
+    padding: 25px;
+    font: var(--font-padrao);
+    font-weight: bolder;
+}
+
+.btn2 {
+    background-color: var(--cor02);
+    color: var(--cor04);
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.493);
+    border-radius: 5px;
+    padding: 25px;
+    font: var(--font-padrao);
+    font-weight: bolder;
+}
+
+footer {
+    background-color: var(--cor02);
+}
