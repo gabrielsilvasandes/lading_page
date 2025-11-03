@@ -118,6 +118,35 @@ div > h3 {
     padding-bottom: 50px;
 }
 
+.id5 {
+    padding: 50px;
+}
+
+.id5 > div {
+    width: 700px;
+    height: 400px;
+    background: linear-gradient(to top ,#0f172a, #1e293b);
+    border-radius: 10px;
+    border: 1px solid var(--cor04);
+    margin-left: 530px;
+}
+
+.id5 > div > p {
+    text-align: center;
+}
+
+.id5 > div > button {
+    margin-left: 250px;
+    background-color: #0ea5e9;
+    color: var(--cor04);
+    text-decoration: none;
+    border: 1px solid var(--cor04);
+    border-radius: 5px;
+    padding: 25px;
+    font: var(--font-padrao);
+    font-weight: bolder;
+}
+
 .btn1 {
     background-color: #0ea5e9;
     color: var(--cor04);
