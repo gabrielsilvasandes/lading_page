@@ -1,6 +1,8 @@
-# 🌐 TechNova : https://gabrielsilvasandes.github.io/lading_page/
+# 🌐 TechNova
 
 Landing page moderna e totalmente responsiva desenvolvida com **HTML5**, **CSS3** e **JavaScript**, focada em **UI/UX**, **design clean** e **interação dinâmica com tema claro e escuro**.
+
+https://gabrielsilvasandes.github.io/lading_page/
 
 ## 🚀 Funcionalidades
 
