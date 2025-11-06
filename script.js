@@ -34,37 +34,3 @@ function tema() {
 // ===============================
 window.addEventListener('load', ajustarImagens);
 window.addEventListener('resize', ajustarImagens);
-
-// ===============================
-// CRIAÇÃO DE ESTRELAS DINÂMICAS
-// ===============================
-
-// Conjunto 1
-let estrelasDiv = document.querySelector('.estrelas');
-for (let i = 0; i < 5; i++) {
-  let estrela = document.createElement('i');
-  estrela.className = 'bi bi-star-fill';
-  estrela.style.color = 'gold';
-  estrela.style.fontSize = '24px';
-  estrelasDiv.appendChild(estrela);
-}
-
-// Conjunto 2
-let estrelasDiv1 = document.querySelector('.estrelas1');
-for (let i = 0; i < 5; i++) {
-  let estrela1 = document.createElement('i');
-  estrela1.className = 'bi bi-star-fill';
-  estrela1.style.color = 'gold';
-  estrela1.style.fontSize = '24px';
-  estrelasDiv1.appendChild(estrela1);
-}
-
-// Conjunto 3
-let estrelasDiv2 = document.querySelector('.estrelas2');
-for (let i = 0; i < 5; i++) {
-  let estrela2 = document.createElement('i');
-  estrela2.className = 'bi bi-star-fill';
-  estrela2.style.color = 'gold';
-  estrela2.style.fontSize = '24px';
-  estrelasDiv2.appendChild(estrela2);
-}
