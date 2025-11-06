@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TechNova</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
     <header>
@@ -14,6 +15,7 @@
         <nav><a href="#">Soluções</a></nav>
         <nav><a href="#">Preços</a></nav>
         <nav><a href="#">Contato</a></nav>
+        <i class="bi bi-sun-fill" onclick="tema()" id="icone-tema"></i>
     </header>
     <main>
         <section class="id1">
@@ -55,32 +57,35 @@
         <section class="id3">
             <h2>Performance em Números</h2>
             <p>Resultados comprovados de empresas que utilizam nossa plataforma</p>
-            <div><img src="imagens/grafico_pizza.png" alt=""></div>
-            <div><img src="imagens/grafico.png" alt=""></div>
+            <div class="mg-1"><img src="imagens/escuro/grafico_pizza.png" alt=""></div>
+            <div class="mg-2"><img src="imagens/escuro/grafico.png" alt=""></div>
         </section>
 
         <section class="id4">
             <h2>Depoimentos de Clientes</h2>
             <p>Veja o que nossos clientes dizem sobre nossa plataforma</p>
             <div>
+                <i class="bi bi-person"></i>
                 <h4>Carlos Mendes</h4>
                 <p><small>CTO, TechGlobal</small></p>
                 <p><q>A plataforma revolucionou nossa operação.<br>Aumentamos a eficiência em 40% e reduzimos custos significativamente.</q></p>
-                <div><img src="" alt=""></div>
+                <div class="estrelas"></div>
             </div>
             
             <div>
+                <i class="bi bi-person"></i>
                 <h4>Ana Silva</h4>
                 <p><small>Diretora, InovaTech</small></p>
                 <p><q>Implementação rápida e suporte excepcional. <br> A equipe se adaptou perfeitamente às nossas necessidades.</q></p>
-                <div><img src="" alt=""></div>
+                <div class="estrelas1"></div>
             </div>
 
             <div>
+                <i class="bi bi-person"></i>
                 <h4>Roberto Alves</h4>
                 <p><small>CEO, DataSolutions</small></p>
                 <p>ROI visível em apenas 3 meses. A plataforma<br>superou todas as nossas expectativas em termos de funcionalidade.</p>
-                <div><img src="" alt=""></div>
+                <div class="estrelas2"></div>
             </div>
         </section>
 
@@ -93,9 +98,10 @@
         </section>
 
         <section class="id6">
-            <div>
+            <div class="foo-id1">
                 <h4>TechNova</h4>
-                <p>Soluções tecnológicas inovadoras para empresas que buscam excelência e crescimento sustentável.</p>
+                <p>Soluções tecnológicas inovadoras para<br>empresas que buscam excelência e<br>crescimento sustentável.</p>
+                <img src="" alt="">
                 <img src="" alt="">
                 <img src="" alt="">
                 <img src="" alt="">
@@ -122,10 +128,26 @@
                 <p><img src="" alt=""><address>Av. Tecnológica, 1234 - São Paulo, SP</address></p>
                 <p><img src="" alt="">(11) 3456-7890</p>
                 <p><img src="" alt="">contato@technova.com.br</p>
+
+                <div class="social-icons">
+
+                <a href="https://www.instagram.com" target="_blank" class="text-danger fs-3 me-3">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com" target="_blank" class="text-primary fs-3 me-3">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://wa.me/seunumerodetelefone" target="_blank" class="text-success fs-3">
+                    <i class="bi bi-whatsapp"></i>
+                </a>
+
+                </div>
+
             </div>
         </section>
     </main>
-    <hr>
+    <hr style="color: lightgray; opacity: 0.3; margin-left: 150px; margin-right: 150px;">
     <footer>© 2023 TechNova. Todos os direitos reservados.</footer>
+    <script src="script.js"></script>
 </body>
 </html>

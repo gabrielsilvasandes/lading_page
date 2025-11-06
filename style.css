@@ -2,47 +2,35 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
+/* =============================== */
+/* VARIÁVEIS E TEMAS */
+/* =============================== */
 :root {
     --cor01: #1e293b;
     --cor02: #0f172a;
     --cor03: #00f0ff;
     --cor04: #ffffff;
-
+    --cor06: #0f172a;
+    --cor07: #1e293b;
     --font-padrao: normal 16px "Source Sans 3";
 }
 
+body.light {
+  --cor01: #f1f5f9;
+  --cor02: #ffffff;
+  --cor03: #00bcd4;
+  --cor04: #0f172a;
+  --cor06: #f8fafc;
+  --cor07: #e2e8f0;
+}
+
+/* =============================== */
+/* ESTRUTURA GLOBAL */
+/* =============================== */
 body {
     font: var(--font-padrao);
     background-color: var(--cor02);
     color: var(--cor04);
-}
-
-header {
-    padding: 20px;
-}
-
-header > h3 {
-    display: inline-block;
-    margin-right: 1440px;
-}
-
-header > nav {
-    display: inline-block;
-    padding: 5px;
-}
-
-header > nav > a {
-    text-decoration: none;
-    color: var(--cor04);
-}
-
-header > nav > a:hover {
-    text-decoration: none;
-    background-color: var(--cor03);
-    color: var(--cor01);
-    padding: 5px;
-    border-radius: 3px;
-    transition-duration: 0.5s;
 }
 
 h2 {
@@ -51,11 +39,58 @@ h2 {
     font-size: xx-large;
 }
 
-.id1 {
-    padding: 100px;
-    font-size: x-large;
+/* =============================== */
+/* HEADER */
+/* =============================== */
+header {
+    padding: 20px;
 }
 
+header > h3 {
+    display: inline-block;
+    margin-right: 1420px;
+}
+
+header > nav {
+    display: inline-block;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: var(--cor04);
+}
+
+header > i {
+    padding-left: 4px;
+    text-decoration: none;
+    background-color: var(--cor02);
+    color: var(--cor04);
+    border-radius: 3px;
+    padding: 4px;
+}
+
+/* Hover header */
+header > i:hover {
+    background-color: var(--cor03);
+    color: var(--cor01);
+    transition-duration: 0.5s;
+}
+
+header > nav > a:hover {
+    background-color: var(--cor03);
+    color: var(--cor01);
+    padding: 4px;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+}
+
+/* =============================== */
+/* SEÇÕES PRINCIPAIS */
+/* =============================== */
+
+/* Estrutura base */
 .id1, .id3, .id5 {
     background-color: var(--cor01);
 }
@@ -64,7 +99,24 @@ h2 {
     background-color: var(--cor02);
 }
 
-.id2 > div{
+/* --- SEÇÃO 1 --- */
+.id1 {
+    padding: 100px;
+    font-size: x-large;
+}
+
+/* --- SEÇÃO 2 --- */
+.id2 {
+    padding-bottom: 50px;
+}
+
+.id2 > p {
+    text-align: center;
+    margin-bottom: 50px;
+    padding-bottom: 50px;
+}
+
+.id2 > div {
     border: 1px solid var(--cor04);
     width: 300px;
     height: 300px;
@@ -75,14 +127,22 @@ h2 {
     border-radius: 10px;
 }
 
-.id2 > p {
-    text-align: center;
-    margin-bottom: 50px;
-    padding-bottom: 50px;
+.id2 > div:hover {
+    color: var(--cor01);
+    background-color: var(--cor03);
+    transition-duration: 0.5s;
 }
 
-div > h3 {
-    text-align: center;
+body.light .id2 > div:hover {
+  color: var(--cor04);            
+  border: 1px solid var(--cor02);  
+  background-color: var(--cor03);  
+  transition-duration: 0.5s;
+}
+
+/* --- SEÇÃO 3 --- */
+.id3 {
+    padding-bottom: 50px;
 }
 
 .id3 > p {
@@ -97,7 +157,9 @@ div > h3 {
     border-radius: 5px;
 }
 
-.id3, .id2 {
+/* --- SEÇÃO 4 --- */
+.id4 > p {
+    text-align: center;
     padding-bottom: 50px;
 }
 
@@ -113,22 +175,18 @@ div > h3 {
     margin-bottom: 50px;
 }
 
-.id4 > p {
-    text-align: center;
-    padding-bottom: 50px;
-}
-
+/* --- SEÇÃO 5 --- */
 .id5 {
     padding: 50px;
 }
 
 .id5 > div {
     width: 700px;
-    height: 400px;
-    background: linear-gradient(to top ,#0f172a, #1e293b);
+    height: 330px;
+    background: linear-gradient(to top , var(--cor06), var(--cor07));
     border-radius: 10px;
     border: 1px solid var(--cor04);
-    margin-left: 530px;
+    margin-left: 550px;
 }
 
 .id5 > div > p {
@@ -136,17 +194,62 @@ div > h3 {
 }
 
 .id5 > div > button {
-    margin-left: 250px;
+    margin-left: 260px;
     background-color: #0ea5e9;
     color: var(--cor04);
-    text-decoration: none;
     border: 1px solid var(--cor04);
     border-radius: 5px;
     padding: 25px;
     font: var(--font-padrao);
     font-weight: bolder;
+    margin-top: 30px;
 }
 
+/* --- SEÇÃO 6 --- */
+.id6 {
+    padding: 100px;
+}
+
+.id6 > div {
+    height: 250px;
+    width: 250px;
+    display: inline-block;
+    margin-left: 100px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.id6 > .foo-id1 {
+    padding-top: 20px;
+    padding-bottom: 3px;
+}
+
+.id6 > div > h4 {
+    font-size: x-large;
+}
+
+.id6 > div > p > a {
+    text-decoration: none;
+    color: var(--cor04);
+}
+
+.id6 > div > p > a:hover {
+    text-decoration: underline;
+}
+
+.id6 > div > .social-icons > a {
+    margin: 10px;
+    font-size: x-large;
+    color: var(--cor04);
+}
+
+.id6 > div > .social-icons > a:hover {
+    color: var(--cor03);
+}
+
+/* =============================== */
+/* BOTÕES */
+/* =============================== */
 .btn1 {
     background-color: #0ea5e9;
     color: var(--cor04);
@@ -161,7 +264,6 @@ div > h3 {
 .btn2 {
     background-color: var(--cor02);
     color: var(--cor04);
-    text-decoration: none;
     border: 1px solid rgba(255, 255, 255, 0.493);
     border-radius: 5px;
     padding: 25px;
@@ -169,6 +271,116 @@ div > h3 {
     font-weight: bolder;
 }
 
+/* =============================== */
+/* FOOTER */
+/* =============================== */
 footer {
     background-color: var(--cor02);
+    text-align: center;
+    padding: 15px;
+    opacity: 0.3;
+}
+
+/* =============================== */
+/* RESPONSIVIDADE */
+/* =============================== */
+
+@media (max-width: 1200px) {
+  header > h3 { margin-right: 800px; }
+  .id4 > div { margin-left: 80px; }
+  .id5 > div { margin-left: 300px; }
+}
+
+@media (max-width: 992px) {
+  header { text-align: center; }
+  header > h3 { display: block; margin: 0 auto 15px; }
+  header > nav { display: block; text-align: center; }
+
+  .id1, .id6 { padding: 50px 20px; }
+
+  .id2 > div, .id4 > div,
+  .id3 > div, .id5 > div {
+    display: block;
+    margin: 20px auto;
+  }
+
+  .id5 > div { width: 90%; }
+}
+
+@media (max-width: 768px) {
+  header { padding: 10px; }
+  h2 { font-size: 1.5rem; }
+
+  .id2 > div,
+  .id4 > div,
+  .id6 > div {
+    width: 90%;
+    height: auto;
+  }
+
+  .id5 > div {
+    height: auto;
+    padding: 20px;
+  }
+
+  .id5 > div > button {
+    margin-left: 0;
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+  }
+
+  .id6 > div {
+    margin: 20px auto;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  header > h3 { font-size: 1.2rem; }
+  header > nav > a { display: inline-block; margin: 4px; }
+
+  .id1 {
+    padding: 40px 15px;
+    font-size: large;
+  }
+
+  .id5 > div { width: 100%; }
+  .id6 > div > h4 { font-size: 1.1rem; }
+  footer { font-size: 0.8rem; }
+}
+
+/* =============================== */
+/* AJUSTE DE IMAGENS RESPONSIVAS */
+/* =============================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .id2 img, .id3 img, .id4 img, .id5 img, .id6 img {
+    margin: 0 auto;
+  }
+}
+
+/* =============================== */
+/* RESPONSIVIDADE - HOVER TOUCH */
+/* =============================== */
+@media (hover: none) {
+  header > i:active,
+  header > nav > a:active,
+  .id2 > div:active {
+    background-color: var(--cor03);
+    color: var(--cor01);
+    border-radius: 3px;
+    transition-duration: 0.5s;
+  }
+
+  body.light .id2 > div:active {
+    color: var(--cor04);
+    border: 1px solid var(--cor02);
+    background-color: var(--cor03);
+  }
 }
